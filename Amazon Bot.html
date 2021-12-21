@@ -7,5 +7,21 @@
 </head>
 <body>
     <h1>Amazon Bot</h1>
+    <hr>
+
+    <h3>Overview:</h3>
+    <p>    This was a small project I created for myself during spring break (2021). I used my time to study-up 
+        <br>on Selenium and a bit of python to make it work. For context: GPU’s, graphical processing units, at the 
+        <br>time were heavily out of stock. And whenever one got restocked, it sold out almost immediately. So, in 
+        <br>order to snag just one, I created a very simple and very-much flawed bot (it worked actually worked).<br></p>
+    
+    <h3>Contribution:</h3>
+    <p>The bot essentially will open a browser instance, open the provided Amazon page and will refresh every one second 
+        <br>until the “add to cart” option is available. Once clicked, it will enter valid Amazon credentials and submit the order.<br></p>
+    
+    <h3>Complications:</h3>
+    <p>- The major counter to this solution is Amazon’s bot detection. Once a CAPTCHA popped up, the bot would keep refreshing that page, defeating the purpose.</p>
+    <p>- This solution is specifically tailored to Amazon. Different websites have different page elements, which would call for the whole program to be rewritten.</p>
+
 </body>
 </html>

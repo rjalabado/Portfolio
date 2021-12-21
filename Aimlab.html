@@ -7,5 +7,32 @@
 </head>
 <body>
     <h1>Aimlab</h1>
+    <img src="/Portfolio/images/aimlab.png" width="800" height="480"/>>
+    <hr>
+
+    <h3>Overview:</h3>
+    <p>This was a fun project I did with a friend to replicate the game “Aimlab”. The game is designated to improve your skill 
+        <br>in first-person shooters. The concept is simple. Configure your settings, click on blue balls as fast and as accurately 
+        <br>as you can. Our version was to attempt to replicate the clicking and score-keeping aspect of the game as close as we could.</p>
+
+    <h3>Contribution:</h3>
+    <p>We followed <a href="https://developer.mozilla.org/en-US/docs/Web/API/Pointer_Lock_API">this API</a> which locks your mouse when clicking on the canvas. It will then make canvas full screen. 
+        <br>We used this to simulate a first-person view. We had to create our own sprites, so took screenshots from a few games to 
+        <br>represent these and the backgrounds.<br></p>
+    <p>We created a coordinate system based off the placement of the mouse. Each sprite had a coordinate and did not move. The only 
+        <br>sprites that moved were the crosshair and gun, even though those were the two that seemingly weren’t moving. We did this by 
+        <br>always changing their coordinates in alignment with the mouse’s movement.<br></p>
+    <p>Action listeners were set in place to check for if the user clicks the mouse. That moment the mouse is clicked, the gun’s animation 
+        <br>will go off, and the gun sound is played. Additionally, if the crosshair’s coordinates overlap with a ball’s coordinates, points 
+        <br>will be added, and a popping sound is played. Lastly, if there is no overlap, it’s a miss, and points will be deducted. This continues 
+        <br>for 60 seconds until the game is over.</p>
+
+    <h3>Complications:</h3>
+    <p>- Gun sprite animation. As you click more, the gun’s animation speeds up, I would’ve liked to have fixed this, but was 
+        <br>unsure of how to fix it considering how we implemented the game.</p>
+    <p>- We tried to create a 3D space in 2D. We thought we could sell the 3D effect, but one of our ultimate downfalls was 
+        <br>the background. We tried many ideas, however ultimately, we had to settle with a static 2D image.</p>
+    <p>- General implementation. We started with a JavaScript-based game engine. However, I think we misunderstood how to use 
+        this tool and rearranged/mishandled a lot of different features to try and meet our wants.</p>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Bot - RJ Alabado Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <div class="project-detail">
+        <div class="back-btn">
+            <a href="index.html" class="btn btn-secondary">← Back to Portfolio</a>
+        </div>
+        
+        <div class="project-hero">
+            <h1>Amazon Bot</h1>
+            <p style="font-size: 1.2rem; color: #666; margin-top: 20px;">Automated Purchase Assistant</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🤖 Project Background</h2>
+            <p>Developed during spring break 2021 to address the GPU shortage affecting the tech community. Created an automated monitoring and purchasing assistant when graphics cards were selling out within seconds. This practical problem-solving project provided valuable experience with web automation technologies.</p>
+            
+            <p>Side Note: Successfully purchased a GPU using this bot! (And accidentally a hair comb for testing purposes)</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🔧 Technical Implementation</h2>
+            <div class="project-tech" style="justify-content: flex-start; margin: 20px 0;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Selenium WebDriver</span>
+                <span class="skill-tag">Web Automation</span>
+                <span class="skill-tag">Browser Control</span>
+                <span class="skill-tag">DOM Manipulation</span>
+            </div>
+            
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Implementation Approach</h3>
+            <p>Straightforward automation process: Initialize Chrome browser, navigate to target product page, continuously monitor for "Add to Cart" button availability, execute purchase sequence with auto-populated credentials, and complete checkout flow automatically.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🎯 Key Features</h2>
+            <ul style="margin: 15px 0; padding-left: 20px; line-height: 1.8;">
+                <li>Real-time product availability monitoring with configurable refresh intervals</li>
+                <li>Automated form filling, credential management, and checkout completion</li>
+                <li>Error handling for common web elements and browser session management</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>⚠️ Technical Challenges & Limitations</h2>
+            <p>Encountered Amazon's bot detection systems triggering CAPTCHA verification, platform-specific design requiring Amazon element selectors, rate limiting concerns with aggressive refresh rates, and dynamic content updates requiring ongoing maintenance.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>📚 Key Learning Outcomes</h2>
+            <p>Provided practical experience with Selenium WebDriver and Python automation, web scraping techniques, browser automation challenges, anti-bot countermeasures, robust error handling in automated systems, and real-world application of programming skills.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🔮 Future Improvements</h2>
+            <p>If I were to revisit this project, I would consider implementing:</p>
+            <ul style="margin: 15px 0; padding-left: 20px; line-height: 1.8;">
+                <li>CAPTCHA solving integration or human verification prompts</li>
+                <li>Multiple website support with configurable selectors</li>
+                <li>Proxy rotation to avoid IP blocking</li>
+                <li>More sophisticated timing and randomization to appear more human-like</li>
+                <li>Notification systems (email/SMS) when products become available</li>
+                <li>Price monitoring and threshold-based purchasing</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>🔗 Project Repository</h2>
+            <div class="project-links">
+                <a href="https://github.com/rjalabado/amazonBot" class="btn btn-primary">View Source Code</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Client SDET - RJ Alabado Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <div class="project-detail">
+        <div class="back-btn">
+            <a href="index.html" class="btn btn-secondary">← Back to Portfolio</a>
+        </div>
+
+        <div class="project-hero">
+            <h1>Microsoft Client - SDET Project</h1>
+            <p style="font-size: 1.2rem; color: #666; margin: 20px 0;">SDET Automation Architecture, Reliability Engineering, and CI/CD Delivery</p>
+
+            <div style="text-align: center; margin: 30px 0; padding: 24px; background: #f8f9fa; border: 2px dashed #ddd; border-radius: 15px;">
+                <p style="color: #666; font-size: 1rem; margin: 0; font-style: italic;">Images and project-specific UI details are not included for confidentiality reasons.</p>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>🚀 Project Overview</h2>
+            <p>Worked as an SDET on a large enterprise SPA, building and maintaining robust end-to-end automation focused on reliability, coverage, and maintainability. The effort emphasized production-like validation, resilient test architecture, and repeatable CI execution with clear ownership and triage practices.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🔧 Tech Stack</h2>
+            <div class="project-tech" style="justify-content: flex-start; margin: 20px 0;">
+                <span class="skill-tag">Playwright 1.54</span>
+                <span class="skill-tag">TypeScript 5.4</span>
+                <span class="skill-tag">React 18 SPA</span>
+                <span class="skill-tag">Fluent UI v9</span>
+                <span class="skill-tag">MSAL 3</span>
+                <span class="skill-tag">Azure AD</span>
+                <span class="skill-tag">Azure DevOps Pipelines</span>
+                <span class="skill-tag">Highcharts Validation</span>
+                <span class="skill-tag">AI-Assisted Development</span>
+            </div>
+            <p>Used TypeScript + Playwright for browser automation, executed authenticated test flows with real user sessions, and integrated results into Azure DevOps pipelines for consistent delivery quality.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🧪 Test Engineering Approach</h2>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Shared Context and Lifecycle Management</h3>
+            <p>Implemented shared browser context patterns with `beforeAll` / `afterAll`, plus `beforeEach` recovery guards, to reduce execution overhead and improve suite resilience when pages become unstable.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Page Health Gating</h3>
+            <p>Added health-gate checks before execution so suites skip safely when prerequisites fail, preventing noisy false failures and improving signal quality for triage.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Feature-Flag Aware Validation</h3>
+            <p>Designed tests to branch based on live feature state instead of hardcoded assumptions, allowing the same suite to run reliably across different environments.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>📊 Reliability and Data Validation</h2>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Data-Driven Assertions</h3>
+            <p>Validated filters and metric changes by capturing values before/after interactions and asserting numeric relationships. Implemented robust parsing for formatted values (currency and abbreviated magnitudes) to support deterministic comparisons.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Chart and Integration Verification</h3>
+            <p>Verified chart behavior through DOM/attribute-based assertions and tested critical cross-workflow navigation paths to ensure end-to-end behavior remained stable under real auth and real backend data.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>🛠️ Quality Operations and Ownership</h2>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Test Authoring and Utilities</h3>
+            <p>Mapped automated tests to tracked work items, built reusable helper utilities for dropdowns/flows/table checks, and centralized locator strategy for easier maintenance when UI changes occurred.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Accessibility-First Locator Strategy</h3>
+            <p>Preferred ARIA role/label-based locators (`getByRole`, `getByLabel`, `getByPlaceholder`) to align with accessibility standards and reduce brittle selector failures.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">AI-Accelerated Workflow</h3>
+            <p>Used AI tools to accelerate test scaffolding, helper generation, and refactoring while maintaining review discipline, deterministic assertions, and maintainable suite structure.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>📈 Impact</h2>
+            <ul style="margin: 15px 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>Higher signal quality:</strong> Health gating and resilient setup reduced false negatives.</li>
+                <li><strong>Scalable maintenance:</strong> Shared utilities and centralized locators simplified updates.</li>
+                <li><strong>Cross-environment confidence:</strong> Feature-aware, auth-backed tests improved release trust.</li>
+                <li><strong>Faster delivery loops:</strong> CI integration and AI-assisted workflows increased throughput.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

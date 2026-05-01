@@ -7,6 +7,16 @@
     <title>Eversource React Dashboard - RJ Alabado Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/icon.png" type="image/png">
+    <style>
+        .eversource-gallery {
+            width: min(92vw, 900px);
+            max-width: 900px;
+        }
+
+        .eversource-gallery .gallery-container {
+            height: 520px;
+        }
+    </style>
 </head>
 <body>
     <div class="project-detail">
@@ -16,17 +26,29 @@
         
         <div class="project-hero">
             <h1>Eversource - React Client Dashboard</h1>
-            <p style="font-size: 1.2rem; color: #666; margin: 20px 0;">Full-Stack Frontend Development with React and Power BI Integration</p>
+            <p style="font-size: 1.2rem; color: #666; margin: 20px 0;">React Dashboard Development with Power BI, Azure Hosting, and Enterprise Access Controls</p>
             
-            <!-- No Images Available -->
-            <div style="text-align: center; margin: 30px 0; padding: 40px; background: #f8f9fa; border: 2px dashed #ddd; border-radius: 15px;">
-                <p style="color: #666; font-size: 1.1rem; margin: 0; font-style: italic;">No photos available.. yet!</p>
+            <div class="image-gallery eversource-gallery">
+                <div class="gallery-container">
+                    <img src="images/eversource_1.png" alt="Eversource dashboard overview" class="gallery-image active">
+                    <img src="images/eversource_2.png" alt="Eversource dashboard reporting view" class="gallery-image">
+                    <img src="images/eversource_3.png" alt="Eversource dashboard data and analytics view" class="gallery-image">
+                </div>
+                <div class="gallery-nav">
+                    <button class="gallery-btn prev" onclick="changeImage(-1)">❮</button>
+                    <button class="gallery-btn next" onclick="changeImage(1)">❯</button>
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" onclick="currentImage(1)"></span>
+                    <span class="dot" onclick="currentImage(2)"></span>
+                    <span class="dot" onclick="currentImage(3)"></span>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
             <h2>🚀 Project Overview</h2>
-            <p>Built a complete React client dashboard from scratch, taking ownership of the entire frontend development lifecycle. Created a scalable reporting platform with integrated Power BI dashboards and REST API data visualization. Balanced technical excellence with business needs while working with minimal design guidance.</p>
+            <p>Built a complete React client dashboard from scratch while leading the initial page design direction and collaborating closely with designers and the client to improve usability. Delivered a scalable reporting platform with integrated Power BI dashboards, REST API data visualization, and production deployment at <a href="https://www.masssavedata.com/" target="_blank" rel="noopener noreferrer">masssavedata.com</a>.</p>
         </div>
 
         <div class="project-section">
@@ -37,9 +59,11 @@
                 <span class="skill-tag">CSS3</span>
                 <span class="skill-tag">REST APIs</span>
                 <span class="skill-tag">Power BI Embedded</span>
+                <span class="skill-tag">Azure App Service</span>
+                <span class="skill-tag">Azure Monitor / Application Insights</span>
+                <span class="skill-tag">Azure AD</span>
+                <span class="skill-tag">Azure Key Vault</span>
                 <span class="skill-tag">JavaScript ES6+</span>
-                <span class="skill-tag">GitHub Copilot</span>
-                <span class="skill-tag">Git Workflows</span>
             </div>
             
             <h3 style="color: #667eea; margin: 30px 0 15px 0;">Repository Foundation</h3>
@@ -57,23 +81,26 @@
 
             <h3 style="color: #667eea; margin: 30px 0 15px 0;">REST API Integration</h3>
             <p>Integrated multiple API endpoints with dynamic data display, robust error handling, and clean data flow management from APIs to frontend components.</p>
+
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Azure Platform, Security, and Secrets</h3>
+            <p>Deployed and supported the production application in Azure, implemented Azure AD login and role-based permissions, secured sensitive values with Azure Key Vault, and monitored reliability and usage with Azure insights.</p>
         </div>
 
         <div class="project-section">
             <h2>💼 Cross-Functional Leadership</h2>
             
             <h3 style="color: #667eea; margin: 30px 0 15px 0;">Design and UX Decision-Making</h3>
-            <p>Led design direction and UI decisions in the absence of dedicated design resources. Maintained visual consistency and prioritized user experience across all dashboard components.</p>
+            <p>Drove the initial page designs and worked directly with designers and the client to refine layout, hierarchy, and overall UX. Maintained visual consistency while balancing user goals and technical constraints.</p>
 
             <h3 style="color: #667eea; margin: 30px 0 15px 0;">Team Collaboration</h3>
-            <p>Collaborated with backend developers for seamless integration, translated business needs into technical implementations, and created comprehensive documentation for team onboarding.</p>
+            <p>Collaborated with backend developers and stakeholders for seamless integration, translated business needs into implementation details, and maintained clear communication throughout delivery and release phases.</p>
         </div>
 
         <div class="project-section">
             <h2>🛠️ Development Tools and Workflow</h2>
             
-            <h3 style="color: #667eea; margin: 30px 0 15px 0;">GitHub Copilot Integration</h3>
-            <p>Leveraged AI-assisted development for rapid component scaffolding, accelerated API integration, and improved code quality patterns.</p>
+            <h3 style="color: #667eea; margin: 30px 0 15px 0;">Azure Delivery and Monitoring Workflow</h3>
+            <p>Supported deployment and runtime observability in Azure with practical release workflows, application insights, and production monitoring to quickly identify and resolve issues.</p>
 
             <h3 style="color: #667eea; margin: 30px 0 15px 0;">Developer Experience Enhancement</h3>
             <p>Established ESLint rules, Prettier formatting, repository standards, and comprehensive onboarding documentation to improve team productivity.</p>
@@ -81,17 +108,91 @@
 
         <div class="project-section">
             <h2>🎯 Business Impact and Prioritization</h2>
-            
+            <p>Prioritized features that improved client-facing reporting clarity, secure access, and production reliability. Focused on delivering practical value quickly while still building a maintainable and extensible dashboard foundation.</p>
+        </div>
+
         <div class="project-section">
             <h2>📈 Key Accomplishments</h2>
             <ul style="margin: 15px 0; padding-left: 20px; line-height: 1.8;">
                 <li><strong>Complete Frontend Architecture:</strong> Built scalable React application from repository setup to production</li>
                 <li><strong>Complex Integration Success:</strong> Successfully embedded Power BI reports despite technical challenges</li>
-                <li><strong>Cross-Functional Leadership:</strong> Managed frontend development while contributing to design decisions</li>
-                <li><strong>Team Productivity Enhancement:</strong> Established development standards and comprehensive documentation</li>
-                <li><strong>Modern Development Practices:</strong> Leveraged GitHub Copilot to accelerate development while maintaining quality</li>
+                <li><strong>Design Collaboration Leadership:</strong> Led initial page design direction and partnered with designers and client stakeholders to improve UX</li>
+                <li><strong>Azure Security and Operations:</strong> Deployed in Azure, implemented Azure AD login/permissions, secured secrets with Key Vault, and monitored with insights</li>
+                <li><strong>Live Production Delivery:</strong> Supported release of the client site at <a href="https://www.masssavedata.com/" target="_blank" rel="noopener noreferrer">www.masssavedata.com</a></li>
             </ul>
         </div>
     </div>
+    <script>
+        let currentImageIndex = 1;
+
+        function changeImage(direction) {
+            const images = document.querySelectorAll('.gallery-image');
+            const dots = document.querySelectorAll('.dot');
+
+            images[currentImageIndex - 1].classList.remove('active');
+            dots[currentImageIndex - 1].classList.remove('active');
+
+            currentImageIndex += direction;
+
+            if (currentImageIndex > images.length) {
+                currentImageIndex = 1;
+            } else if (currentImageIndex < 1) {
+                currentImageIndex = images.length;
+            }
+
+            images[currentImageIndex - 1].classList.add('active');
+            dots[currentImageIndex - 1].classList.add('active');
+        }
+
+        function currentImage(index) {
+            const images = document.querySelectorAll('.gallery-image');
+            const dots = document.querySelectorAll('.dot');
+
+            images[currentImageIndex - 1].classList.remove('active');
+            dots[currentImageIndex - 1].classList.remove('active');
+
+            currentImageIndex = index;
+
+            images[currentImageIndex - 1].classList.add('active');
+            dots[currentImageIndex - 1].classList.add('active');
+        }
+
+        setInterval(() => {
+            changeImage(1);
+        }, 5000);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                changeImage(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        });
+
+        let startX = 0;
+        let endX = 0;
+
+        document.querySelector('.gallery-container').addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        document.querySelector('.gallery-container').addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const threshold = 50;
+            const diff = startX - endX;
+
+            if (Math.abs(diff) > threshold) {
+                if (diff > 0) {
+                    changeImage(1);
+                } else {
+                    changeImage(-1);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

@@ -90,4 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     });
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
 });

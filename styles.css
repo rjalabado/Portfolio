@@ -235,17 +235,19 @@ nav a.active {
 .contact-link {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     text-decoration: none;
-    color: #333;
+    color: white;
+    background: #667eea;
     padding: 15px 25px;
     border-radius: 10px;
-    background: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .contact-link:hover {
+    background: #5a6fd8;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
